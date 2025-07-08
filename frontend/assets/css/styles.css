@@ -15,6 +15,10 @@ textarea {
     outline: none;
 }
 
+body.hiddenScroll {
+    overflow: hidden;
+}
+
 :root {
     --primary: #06B6F2;
     --white: #FFFFFF;
@@ -763,4 +767,276 @@ textarea {
 
 .product-txt:hover {
     background-color: var(--gray-bg);
+}
+
+
+
+/* ///////////////////////////// */
+
+            /* play video */
+
+/* ///////////////////////////// */
+.main-nav {
+    width: 100%;
+    height: 2000px;
+    min-height: 100vh;
+    background-color: var(--light-bg);
+    padding: 64px 0 0 100px;
+}
+
+.play-nav {
+    width: 100%;
+    height: calc(100vh - 64px);
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+}
+
+.play-video {
+    width: auto;
+    height: 100%;
+}
+
+
+
+
+
+/* ///////////////////////////// */
+
+            /* modal */
+
+/* ///////////////////////////// */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 250;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s ease;
+}
+
+#modalPlaylist.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#modalPlaylist .playlist-nav {
+    width: auto;
+    height: auto;
+    background-color: var(--white);
+    border-radius: .2rem;
+}
+
+.playlist-list {
+    width: 300px;
+    height: auto;
+}
+
+.playlist-head {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray-border);
+    padding: 0 1rem;
+}
+
+.playlist-head h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--black-85);
+}
+
+.playlist-head i {
+    font-size: 1.2rem;
+    color: var(--black-85);
+    cursor: pointer;
+}
+
+.playlist-wrap {
+    width: 100%;
+    max-height: 350px;
+    overflow-y: scroll;
+}
+
+.playlist-wrap::-webkit-scrollbar {
+    width: 5px;
+}
+
+.playlist-wrap::-webkit-scrollbar-thumb {
+    background-color: var(--gray-border);
+}
+
+.playlist-item {
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all .3s ease;
+}
+
+.playlist-item:hover {
+    background-color: var(--gray-bg);
+}
+
+.playlist-item input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.playlist-check {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--black-85);
+    border-radius: .2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 1rem;
+}
+
+.playlist-check.active {
+    border: 2px solid var(--primary);
+    background-color: var(--primary);
+    color: var(--white);
+}
+
+.playlist-name {
+    font-size: .9rem;
+    font-weight: 600;
+    color: var(--black-85);
+}
+
+.playlist-footer {
+    width: 100%;
+    height: 60px;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid var(--gray-border);
+}
+
+.playlist-btn {
+    width: calc((100% / 2) - 4px);
+    height: 40px;
+    border-radius: .2rem;
+    border: none;
+    background-color: var(--black);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.playlist-btn i {
+    font-size: 1.2rem;
+    margin-right: .5rem;
+}
+
+.playlist-btn span {
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+.add-playlist-btn {
+    background-color: var(--gray-bg);
+    color: var(--black-40);
+    opacity: .7;
+    cursor: no-drop;
+}
+
+.add-playlist-btn.active {
+    background-color: var(--black);
+    color: var(--white);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.playlist-form {
+    width: 300px;
+    height: auto;
+    display: none;
+}
+
+.playlist-group {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem .5rem 1rem;
+}
+
+.playlist-group label {
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--black-85);
+}
+
+.playlist-group input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid var(--gray-border);
+    border-radius: .2rem;
+    padding: 0 .5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--black-85);
+    margin-top: .2rem;
+}
+
+.playlist-group textarea {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 60px;
+    max-height: 200px;
+    border: 1px solid var(--gray-border);
+    border-radius: .2rem;
+    padding: .5rem;
+    margin-top: .2rem;
+    font-size: .9rem;
+    font-weight: 400;
+    color: var(--black-85);
+}
+
+.playlist-group input::placeholder,
+.playlist-group textarea::placeholder {
+    font-size: .9rem;
+    font-weight: 300;
+    opacity: .6;
+}
+
+.playlist-group input:focus,
+.playlist-group textarea:focus {
+    border: 1px solid var(--primary);
+}
+
+.create-playlist-submit {
+    background-color: var(--gray-bg);
+    color: var(--black-40);
+    opacity: .7;
+    cursor: no-drop;
+}
+
+.create-playlist-submit.active {
+    background-color: var(--black);
+    color: var(--white);
+    opacity: 1;
+    cursor: pointer;
 }

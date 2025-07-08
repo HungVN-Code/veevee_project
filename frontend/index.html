@@ -155,7 +155,7 @@
                     <div class="notions-list">
                         <div class="notions-item">
                             <a href="#">
-                                <img class="notions-img" src="./assets/images/product-1.png" alt="">
+                                <img class="notions-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-1.png" alt="">
                             </a>
                             <div class="notions-wrap">
                                 <a href="#">
@@ -169,7 +169,7 @@
                         </div>
                         <div class="notions-item">
                             <a href="#">
-                                <img class="notions-img" src="./assets/images/product-1.png" alt="">
+                                <img class="notions-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-2.png" alt="">
                             </a>
                             <div class="notions-wrap">
                                 <a href="#">
@@ -177,14 +177,13 @@
                                 </a>
                                 <nav>
                                     <a href="#" class="notions-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
-                                    <a href="#" class="notions-user"></a>
                                     <p>120 lượt xem - 3 ngày trước</p>
                                 </nav>
                             </div>
                         </div>
                         <div class="notions-item">
                             <a href="#">
-                                <img class="notions-img" src="./assets/images/product-1.png" alt="">
+                                <img class="notions-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-3.png" alt="">
                             </a>
                             <div class="notions-wrap">
                                 <a href="#">
@@ -192,7 +191,6 @@
                                 </a>
                                 <nav>
                                     <a href="#" class="notions-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
-                                    <a href="#" class="notions-user"></a>
                                     <p>120 lượt xem - 3 ngày trước</p>
                                 </nav>
                             </div>
@@ -263,11 +261,7 @@
         </a>
         <a class="sidebar-item" href="#">
             <i class="ti ti-list-details"></i>
-            <span>Danh sách chờ</span>
-        </a>
-        <a class="sidebar-item" href="#">
-            <i class="ti ti-list-numbers"></i>
-            <span>List sách phát</span>
+            <span>Danh sách</span>
         </a>
     </div>
     <!-- end -->
@@ -277,10 +271,49 @@
         <div class="main-head">Đề xuất cho bạn</div>
         <div class="product-list">
             <div class="product-item">
+                <a class="product-top" href="watch.html">
+                    <img class="product-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-1.png?raw=true" alt="">
+                    <video class="product-video" muted name="media">
+                        <source src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-1.mp4" type="video/mp4">
+                    </video>
+                </a>
+                <div class="product-wrap">
+                    <a href="#">
+                        <img src="./assets/images/user.png" alt="" class="product-avatar">
+                    </a>
+                    <nav>
+                        <a href="watch.html" class="product-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                        <p>120 lượt xem - 3 ngày trước</p>
+                    </nav>
+                    <div class="btn-product">
+                        <i class="ti ti-dots-vertical"></i>
+                    </div>
+                </div>
+                <form method="post" action="" class="product-tools">
+                    <input type="hidden" id="productId" value="1">
+                    <button type="button" class="product-txt product-bt">
+                        <i class="ti ti-list-details"></i>
+                        <span>Thêm vào danh sách</span>
+                    </button>
+                    <button type="button" class="product-txt product-download" data-link="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-1.mp4">
+                        <i class="ti ti-download"></i>
+                        <span>Tải xuống</span>
+                    </button>
+                    <button type="button" class="product-txt">
+                        <i class="ti ti-share-3"></i>
+                        <span>Chia sẻ</span>
+                    </button>
+                    <button type="button" class="product-txt">
+                        <i class="ti ti-flag-3"></i>
+                        <span>Báo vi phạm</span>
+                    </button>
+                </form>
+            </div>
+            <div class="product-item">
                 <a class="product-top" href="#">
-                    <img class="product-img" src="https://i.ibb.co/JWPkxzLW/product-1.png" alt="">
-                    <video class="product-video" muted poster="./assets/images/product-1.png" name="media">
-                        <source src="./assets/videos/video-1.mp4" type="video/mp4">
+                    <img class="product-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/99fbd6fe8b219f0888be38b2bd425b82684bea1d/images/product-2.png" alt="">
+                    <video class="product-video" muted name="media">
+                        <source src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-2.mp4" type="video/mp4">
                     </video>
                 </a>
                 <div class="product-wrap">
@@ -296,9 +329,10 @@
                     </div>
                 </div>
                 <form method="post" action="" class="product-tools">
-                    <button type="button" class="product-txt">
+                    <input type="hidden" id="productId" value="2">
+                    <button type="button" class="product-txt product-bt">
                         <i class="ti ti-list-details"></i>
-                        <span>Thêm vào danh sách chờ</span>
+                        <span>Thêm vào danh sách</span>
                     </button>
                     <button type="button" class="product-txt product-download" data-link="./assets/images/product-1.png">
                         <i class="ti ti-download"></i>
@@ -316,9 +350,9 @@
             </div>
             <div class="product-item">
                 <a class="product-top" href="#">
-                    <img class="product-img" src="./assets/images/product-1.png" alt="">
-                    <video class="product-video" muted poster="./assets/images/product-1.png" name="media">
-                        <source src="./assets/videos/video-1.mp4" type="video/mp4">
+                    <img class="product-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/99fbd6fe8b219f0888be38b2bd425b82684bea1d/images/product-3.png" alt="">
+                    <video class="product-video" muted name="media">
+                        <source src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-3.mp4" type="video/mp4">
                     </video>
                 </a>
                 <div class="product-wrap">
@@ -334,9 +368,10 @@
                     </div>
                 </div>
                 <form method="post" action="" class="product-tools">
-                    <button type="button" class="product-txt">
+                    <input type="hidden" id="productId" value="3">
+                    <button type="button" class="product-txt product-bt">
                         <i class="ti ti-list-details"></i>
-                        <span>Thêm vào danh sách chờ</span>
+                        <span>Thêm vào danh sách</span>
                     </button>
                     <button type="button" class="product-txt product-download" data-link="./assets/images/product-1.png">
                         <i class="ti ti-download"></i>
@@ -354,9 +389,9 @@
             </div>
             <div class="product-item">
                 <a class="product-top" href="#">
-                    <img class="product-img" src="./assets/images/product-1.png" alt="">
-                    <video class="product-video" muted poster="./assets/images/product-1.png" name="media">
-                        <source src="./assets/videos/video-1.mp4" type="video/mp4">
+                    <img class="product-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/99fbd6fe8b219f0888be38b2bd425b82684bea1d/images/product-4.png" alt="">
+                    <video class="product-video" muted name="media">
+                        <source src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-4.mp4" type="video/mp4">
                     </video>
                 </a>
                 <div class="product-wrap">
@@ -372,9 +407,10 @@
                     </div>
                 </div>
                 <form method="post" action="" class="product-tools">
-                    <button type="button" class="product-txt">
+                    <input type="hidden" id="productId" value="4">
+                    <button type="button" class="product-txt product-bt">
                         <i class="ti ti-list-details"></i>
-                        <span>Thêm vào danh sách chờ</span>
+                        <span>Thêm vào danh sách</span>
                     </button>
                     <button type="button" class="product-txt product-download" data-link="./assets/images/product-1.png">
                         <i class="ti ti-download"></i>
@@ -390,44 +426,72 @@
                     </button>
                 </form>
             </div>
-            <div class="product-item">
-                <a class="product-top" href="#">
-                    <img class="product-img" src="./assets/images/product-1.png" alt="">
-                    <video class="product-video" muted poster="./assets/images/product-1.png" name="media">
-                        <source src="./assets/videos/video-1.mp4" type="video/mp4">
-                    </video>
-                </a>
-                <div class="product-wrap">
-                    <a href="#">
-                        <img src="./assets/images/user.png" alt="" class="product-avatar">
-                    </a>
-                    <nav>
-                        <a href="#" class="product-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
-                        <p>120 lượt xem - 3 ngày trước</p>
-                    </nav>
-                    <div class="btn-product">
-                        <i class="ti ti-dots-vertical"></i>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- modal danh sách -->
+    <div class="modal" id="modalPlaylist">
+        <div class="playlist-nav">
+            <!-- list danh sách -->
+            <form method="post" action="" class="playlist-list">
+                <input type="hidden" id="productIdList" value="">
+                <div class="playlist-head">
+                    <h4>Thêm vào danh sách</h4>
+                    <i class="ti ti-x" id="closeModalPlaylist"></i>
+                </div>
+                <div class="playlist-wrap">
+                    <div class="playlist-item">
+                        <input type="checkbox">
+                        <div class="playlist-check">
+                            <i class="ti ti-check"></i>
+                        </div>
+                        <div class="playlist-name">Phim hay</div>
+                    </div>
+                    <div class="playlist-item">
+                        <input type="checkbox">
+                        <div class="playlist-check">
+                            <i class="ti ti-check"></i>
+                        </div>
+                        <div class="playlist-name">Hài hay</div>
                     </div>
                 </div>
-                <form method="post" action="" class="product-tools">
-                    <button type="button" class="product-txt">
-                        <i class="ti ti-list-details"></i>
-                        <span>Thêm vào danh sách chờ</span>
+                <div class="playlist-footer">
+                    <button type="button" class="playlist-btn create-playlist-btn">
+                        <i class="ti ti-plus"></i>
+                        <span>Tạo mới</span>
                     </button>
-                    <button type="button" class="product-txt product-download" data-link="./assets/images/product-1.png">
-                        <i class="ti ti-download"></i>
-                        <span>Tải xuống</span>
+                    <button type="button" class="playlist-btn add-playlist-btn">
+                        <span>Thêm vào</span>
                     </button>
-                    <button type="button" class="product-txt">
-                        <i class="ti ti-share-3"></i>
-                        <span>Chia sẻ</span>
+                </div>
+            </form>
+
+            <!-- tạo danh sách mới -->
+            <form method="post" action="" class="playlist-form">
+                <input type="hidden" id="productIdForm" value="">
+                <div class="playlist-head">
+                    <h4>Tạo danh sách mới</h4>
+                </div>
+                <div class="playlist-wrap">
+                    <div class="playlist-group">
+                        <label>Tên</label>
+                        <input type="text" id="playlistName" name="" placeholder="Chọn một tiêu đề..." required>
+                    </div>
+                    <div class="playlist-group">
+                        <label>Mô tả</label>
+                        <textarea name="" placeholder="Mô tả (nếu có)"></textarea>
+                    </div>
+                </div>
+                <div class="playlist-footer">
+                    <button type="button" class="playlist-btn cancel-playlist-btn">
+                        <span>Huỷ</span>
                     </button>
-                    <button type="button" class="product-txt">
-                        <i class="ti ti-flag-3"></i>
-                        <span>Báo vi phạm</span>
+                    <button type="button" class="playlist-btn create-playlist-submit">
+                        <span>Tạo</span>
                     </button>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
     <!-- end -->

@@ -1,0 +1,7 @@
+✅ Cách chuyển từ blob sang raw
+
+🔹 Ví dụ link ban đầu trên GitHub:
+https://github.com/HungVN-Code/veevee_project/blob/main/assets/videos/intro.mp4
+
+🔄 Thay blob thành raw:
+https://raw.githubusercontent.com/HungVN-Code/veevee_project/main/assets/videos/intro.mp4
