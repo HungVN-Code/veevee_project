@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     // Bỏ qua lỗi nếu bị pause hoặc video lỗi
                     console.warn('Video play bị lỗi hoặc bị gián đoạn:', error.message);
                 });
-            }, 3000);
+            }, 1500);
         });
 
         item.addEventListener('mouseleave', () => {
@@ -192,5 +192,88 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         document.body.classList.remove('hiddenScroll');
+    });
+
+
+    // ============================================================================
+
+
+    // Xử lý khi click nút chia sẻ
+    document.querySelectorAll('.product-share').forEach(shareBtn => {
+        shareBtn.addEventListener('click', () => {
+            const modal = document.getElementById('modalShare');
+            const productItem = shareBtn.closest('.product-item');
+            const productIdInput = shareBtn.closest('.product-item')?.querySelector('#productId'); // tìm productId gần nhất
+            const productId = productIdInput?.value;
+
+            if (productId) {
+                document.getElementById('productIdShare').value = productId;
+                modal.classList.add('active');
+
+                // Đóng .product-tools tương ứng nếu có
+                const productTools = productItem.querySelector('.product-tools');
+                if (productTools) {
+                    productTools.classList.remove('active');
+                }
+
+                document.body.classList.add('hiddenScroll');
+            }
+        });
+    });
+
+    // Đóng modal khi click vào nút đóng
+    document.getElementById('closeModalShare')?.addEventListener('click', () => {
+        document.getElementById('modalShare').classList.remove('active');
+        document.body.classList.remove('hiddenScroll');
+    });
+
+
+    // ============================================================================
+
+    // Lấy tất cả textarea trong .share-wrap
+    const textareas = document.querySelectorAll('.share-wrap textarea');
+
+    // Hàm autoResize áp dụng cho từng textarea
+    const autoResize = (el) => {
+        el.style.height = 'auto'; // reset trước
+        el.style.height = el.scrollHeight + 'px'; // giãn theo nội dung
+    };
+
+    // Gắn sự kiện và gọi resize ban đầu
+    textareas.forEach(textarea => {
+        textarea.addEventListener('input', () => autoResize(textarea));
+        window.addEventListener('load', () => autoResize(textarea));
+    });
+
+
+    // =============================================================================
+
+    // Lặp qua tất cả các nút sao chép
+    document.querySelectorAll('.share-copy').forEach(copyBtn => {
+        copyBtn.addEventListener('click', () => {
+            // Tìm .textarea tương ứng trong cùng .share-item
+            const shareItem = copyBtn.closest('.share-item');
+            const textarea = shareItem.querySelector('textarea');
+
+            // Sao chép nội dung
+            textarea.select();
+            document.execCommand('copy');
+
+            // Đổi icon và text
+            const icon = copyBtn.querySelector('i');
+            const span = copyBtn.querySelector('span');
+
+            const originalIconClass = 'ti ti-copy';
+            const successIconClass = 'ti ti-check';
+
+            icon.className = successIconClass;
+            span.textContent = 'Đã sao chép';
+
+            // Sau 3s quay lại
+            setTimeout(() => {
+                icon.className = originalIconClass;
+                span.textContent = 'Sao chép';
+            }, 3000);
+        });
     });
 });

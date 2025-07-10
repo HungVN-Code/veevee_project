@@ -299,7 +299,7 @@
                         <i class="ti ti-download"></i>
                         <span>Tải xuống</span>
                     </button>
-                    <button type="button" class="product-txt">
+                    <button type="button" class="product-txt product-share">
                         <i class="ti ti-share-3"></i>
                         <span>Chia sẻ</span>
                     </button>
@@ -338,7 +338,7 @@
                         <i class="ti ti-download"></i>
                         <span>Tải xuống</span>
                     </button>
-                    <button type="button" class="product-txt">
+                    <button type="button" class="product-txt product-share">
                         <i class="ti ti-share-3"></i>
                         <span>Chia sẻ</span>
                     </button>
@@ -377,7 +377,7 @@
                         <i class="ti ti-download"></i>
                         <span>Tải xuống</span>
                     </button>
-                    <button type="button" class="product-txt">
+                    <button type="button" class="product-txt product-share">
                         <i class="ti ti-share-3"></i>
                         <span>Chia sẻ</span>
                     </button>
@@ -416,7 +416,7 @@
                         <i class="ti ti-download"></i>
                         <span>Tải xuống</span>
                     </button>
-                    <button type="button" class="product-txt">
+                    <button type="button" class="product-txt product-share">
                         <i class="ti ti-share-3"></i>
                         <span>Chia sẻ</span>
                     </button>
@@ -492,6 +492,45 @@
                     </button>
                 </div>
             </form>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- modal chia sẻ -->
+    <div class="modal" id="modalShare">
+        <div class="share-nav">
+            <input type="hidden" id="productIdShare" value="">
+            <div class="playlist-head">
+                <h4>Chia sẻ</h4>
+                <i class="ti ti-x" id="closeModalShare"></i>
+            </div>
+            <div class="share-list">
+                <div class="share-item">
+                    <div class="share-header">
+                        <h5>Mã nhúng</h5>
+                        <button type="button" class="share-copy">
+                            <i class="ti ti-copy"></i>
+                            <span>Sao chép</span>
+                        </button>
+                    </div>
+                    <div class="share-wrap">
+                        <textarea><iframe width="560" height="315" src="https://github.com/HungVN-Code/flim_project/blob/main/videos/video-1.mp4" frameborder="0" allowfullscreen></iframe></textarea>
+                    </div>
+                </div>
+
+                <div class="share-item">
+                    <div class="share-header">
+                        <h5>Link</h5>
+                        <button type="button" class="share-copy">
+                            <i class="ti ti-copy"></i>
+                            <span>Sao chép</span>
+                        </button>
+                    </div>
+                    <div class="share-wrap">
+                        <textarea>http://127.0.0.1:5500/frontend/watch.html?v=1</textarea>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end -->
