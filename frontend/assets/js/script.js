@@ -276,4 +276,73 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 3000);
         });
     });
+
+
+    // ==========================================================================
+
+    // Lấy tất cả các report-item
+    const reportItems = document.querySelectorAll('.report-item');
+    const submitBtnReport = document.getElementById('submitBtnReport');
+    const cancelBtnReport = document.getElementById('cancelBtnReport');
+    const modalReport = document.getElementById('modalReport');
+    const productIdReport = document.getElementById('productIdReport');
+
+    reportItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // Bỏ chọn tất cả các radio khác
+            reportItems.forEach(i => {
+                const radio = i.querySelector('input[type="radio"]');
+                if (radio) radio.checked = false;
+                i.classList.remove('selected');
+            });
+
+            // Chọn radio hiện tại
+            const currentRadio = item.querySelector('input[type="radio"]');
+            if (currentRadio) currentRadio.checked = true;
+
+            // Thêm .active và đổi type nếu có radio được chọn
+            if (currentRadio?.checked) {
+                submitBtnReport.classList.add('active');
+                submitBtnReport.setAttribute('type', 'submit');
+                item.classList.add('selected');
+            }
+        });
+    });
+
+    // Huỷ: reset modal
+    cancelBtnReport?.addEventListener('click', () => {
+        // Xoá active modal
+        modalReport?.classList.remove('active');
+
+        // Reset chọn radio
+        reportItems.forEach(item => {
+            const radio = item.querySelector('input[type="radio"]');
+            if (radio) radio.checked = false;
+            item.classList.remove('selected');
+        });
+
+        // Reset nút submit
+        submitBtnReport.classList.remove('active');
+        submitBtnReport.setAttribute('type', 'button');
+    });
+
+    // Mở modal báo cáo khi click .product-report
+    document.querySelectorAll('.product-report').forEach(reportBtn => {
+        reportBtn.addEventListener('click', () => {
+            const productItem = reportBtn.closest('.product-item');
+            const productIdInput = productItem?.querySelector('#productId');
+            const productId = productIdInput?.value;
+
+            if (productId) {
+                productIdReport.value = productId;
+                modalReport?.classList.add('active');
+
+                // Xoá .active trong .product-tools tương ứng nếu có
+                const productTools = productItem.querySelector('.product-tools');
+                if (productTools) {
+                    productTools.classList.remove('active');
+                }
+            }
+        });
+    });
 });

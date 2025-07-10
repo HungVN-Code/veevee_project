@@ -303,7 +303,7 @@
                         <i class="ti ti-share-3"></i>
                         <span>Chia sẻ</span>
                     </button>
-                    <button type="button" class="product-txt">
+                    <button type="button" class="product-txt product-report">
                         <i class="ti ti-flag-3"></i>
                         <span>Báo vi phạm</span>
                     </button>
@@ -342,7 +342,7 @@
                         <i class="ti ti-share-3"></i>
                         <span>Chia sẻ</span>
                     </button>
-                    <button type="button" class="product-txt">
+                    <button type="button" class="product-txt product-report">
                         <i class="ti ti-flag-3"></i>
                         <span>Báo vi phạm</span>
                     </button>
@@ -381,7 +381,7 @@
                         <i class="ti ti-share-3"></i>
                         <span>Chia sẻ</span>
                     </button>
-                    <button type="button" class="product-txt">
+                    <button type="button" class="product-txt product-report">
                         <i class="ti ti-flag-3"></i>
                         <span>Báo vi phạm</span>
                     </button>
@@ -420,7 +420,7 @@
                         <i class="ti ti-share-3"></i>
                         <span>Chia sẻ</span>
                     </button>
-                    <button type="button" class="product-txt">
+                    <button type="button" class="product-txt product-report">
                         <i class="ti ti-flag-3"></i>
                         <span>Báo vi phạm</span>
                     </button>
@@ -532,6 +532,47 @@
                 </div>
             </div>
         </div>
+    </div>
+    <!-- end -->
+
+    <!-- modal báo vi phạm -->
+    <div class="modal" id="modalReport">
+        <form method="post" action="" class="report-nav">
+            <input type="hidden" id="productIdReport" value="">
+            <div class="playlist-head">
+                <h4>Báo cáo ảnh hoặc tiêu đề</h4>
+            </div>
+            <div class="report-list">
+                <div class="report-item">
+                    <input type="radio" name="" value="1">
+                    <h4>Nội dung khiêu dâm</h4>
+                </div>
+                <div class="report-item">
+                    <input type="radio" name="" value="2">
+                    <h4>Nội dung bạo lực hoặc phản cảm</h4>
+                </div>
+                <div class="report-item">
+                    <input type="radio" name="" value="3">
+                    <h4>Nội dung kích động thù địch hoặc lạm dụng</h4>
+                </div>
+                <div class="report-item">
+                    <input type="radio" name="" value="4">
+                    <h4>Hành động gây hại hoặc nguy hiểm</h4>
+                </div>
+                <div class="report-item">
+                    <input type="radio" name="" value="5">
+                    <h4>Nội dung rác hoặc gây hiểu nhầm</h4>
+                </div>
+                <div class="report-item">
+                    <input type="radio" name="" value="6">
+                    <h4>Nội dung ngược đãi trẻ em</h4>
+                </div>
+            </div>
+            <div class="report-footer">
+                <button type="button" class="report-btn" id="cancelBtnReport">Huỷ</button>
+                <button type="button" class="report-btn" id="submitBtnReport">Báo vi phạm</button>
+            </div>
+        </form>
     </div>
     <!-- end -->
 
