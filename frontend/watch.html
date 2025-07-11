@@ -273,14 +273,60 @@
     <!-- main -->
     <div class="main-nav">
         <div class="play-nav">
-            <video class="play-video" poster="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-1.png?raw=true" controls name="media">
-                <source src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-1.mp4" type="video/mp4">
+            <video class="play-video" poster="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-1.png?raw=true" name="media">
+                <source src="./assets/videos/video-1.mp4" type="video/mp4">
             </video>
+
+            <div class="play-screem">
+                <i class="ti ti-player-play"></i>
+            </div>
+
+            <div class="play-actions">
+                <div class="play-topbar">
+                    <div class="play-bar">
+                        <div class="play-toggle">
+                            <div class="play-bar__number">00:00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="play-below">
+                    <nav>
+                        <i class="ti ti-player-play-filled"></i>
+                        <button type="button" class="play-volume">
+                            <i class="ti ti-volume"></i>
+                            <div class="play-volume__wrap">
+                                <div class="play-volume__number">0</div>
+                                <div class="play-volume__bar">
+                                    <div class="play-volume__toggle"></div>
+                                </div>
+                            </div>
+                        </button>
+                        <h4 class="play-time">
+                            <span id="realTime">00:00</span>
+                            /
+                            <span id="totalTime"></span>
+                        </h4>
+                    </nav>
+                    <nav>
+                        <div class="play-speed">
+                            <div class="play-speed__data">1X</div>
+                            <div class="play-speed__list">
+                                <div class="play-speed__item">2X</div>
+                                <div class="play-speed__item">1.5X</div>
+                                <div class="play-speed__item active">1X</div>
+                                <div class="play-speed__item">0.75X</div>
+                                <div class="play-speed__item">0.5X</div>
+                            </div>
+                        </div>
+                        <i class="ti ti-arrows-maximize"></i>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
     <!-- end -->
 
     <!-- js -->
-    <!-- <script src="./assets/js/script.js"></script> -->
+    <script src="./assets/js/watch.js"></script>
 </body>
 </html>
