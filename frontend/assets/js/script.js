@@ -324,6 +324,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // Reset nút submit
         submitBtnReport.classList.remove('active');
         submitBtnReport.setAttribute('type', 'button');
+
+        document.body.classList.remove('hiddenScroll');
     });
 
     // Mở modal báo cáo khi click .product-report
@@ -343,6 +345,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     productTools.classList.remove('active');
                 }
             }
+
+            document.body.classList.add('hiddenScroll');
         });
     });
 });
