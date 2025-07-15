@@ -347,4 +347,39 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+
+    // ===========================================================================
+
+    // phóng - thu gọn nội dung
+    const toggleBtn = document.querySelector('.contai-des__btn');
+    const toggleWrap = document.querySelector('.contai-des__wrap');
+
+    toggleBtn?.addEventListener('click', () => {
+        toggleWrap?.classList.toggle('active');
+
+        if (toggleWrap.classList.contains('active')) {
+            toggleBtn.textContent = 'Thu gọn';
+        } else {
+            toggleBtn.textContent = 'Xem thêm';
+        }
+    });
+
+
+    // ==============================================================================
+
+    const textarea = document.querySelector('#commentTextarea');
+    const commentBtn = document.querySelector('.comment-submit');
+
+    textarea?.addEventListener('input', () => {
+        const hasContent = textarea.value.trim().length > 0;
+
+        if (hasContent) {
+            commentBtn.classList.add('active');
+            commentBtn.setAttribute('type', 'submit');
+        } else {
+            commentBtn.classList.remove('active');
+            commentBtn.setAttribute('type', 'button');
+        }
+    });
 });

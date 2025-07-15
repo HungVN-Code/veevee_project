@@ -251,7 +251,7 @@
 
     <!-- sidebar -->
     <div class="sidebar">
-        <a class="sidebar-item" href="index.html">
+        <a class="sidebar-item active" href="index.html">
             <i class="ti ti-home"></i>
             <span>Trang chủ</span>
         </a>
@@ -261,214 +261,248 @@
         </a>
         <a class="sidebar-item" href="#">
             <i class="ti ti-list-details"></i>
-            <span>Danh sách chờ</span>
-        </a>
-        <a class="sidebar-item" href="#">
-            <i class="ti ti-list-numbers"></i>
-            <span>List sách phát</span>
+            <span>Danh sách</span>
         </a>
     </div>
     <!-- end -->
 
     <!-- main -->
-    <div class="main-nav">
-        <div class="play-nav">
-            <video class="play-video" poster="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-1.png?raw=true" name="media">
-                <source src="./assets/videos/video-1.mp4" type="video/mp4">
-            </video>
-
-            <div class="play-screem">
-                <i class="ti ti-player-play"></i>
+    <div class="main">
+        <div class="post-nav">
+            <img src="./assets/images/banner.png" alt="" class="postp-banner">
+            <div class="post-main">
+                <img src="./assets/images/user.png" alt="" class="post-avatar">
+                <div class="post-wrap">
+                    <h2 id="postTitle">Pops Review</h2>
+                    <p><span>@popsreview</span> • 317 N người theo dõi • 540 video</p>
+                    <div class="post-des">
+                        <input type="hidden" id="postId" value="1">
+                        <h4 id="desText">Pops Review là nơi hội tụ của những đánh giá chân thực, khách quan và thú vị nhất về thế giới giải trí! Từ những bộ phim điện ảnh bom tấn, loạt series hot trên các nền tảng streaming, cho đến các MV âm nhạc, show truyền hình và cả trào lưu mạng xã hội - tất cả sẽ được Pops Review phân tích, bóc tách và chia sẻ dưới góc nhìn gần gũi và sáng tạo.
+                            Với tiêu chí "Xem là hiểu - Hiểu là mê", chúng tôi không chỉ đưa ra review mà còn mang đến cho bạn những góc nhìn mới lạ, giúp bạn chọn được nội dung giải trí phù hợp với thời gian và sở thích của mình.
+                            👉 Theo dõi Pops Review để không bỏ lỡ bất kỳ xu hướng giải trí nào!</h4>
+                        <div class="post-more">Xem thêm</div>
+                    </div>
+                    <form action="" method="post">
+                        <button type="submit" class="post-btn">Theo dõi</button>
+                        <!-- <button type="submit" class="post-btn">Đã theo dõi</button> -->
+                    </form>
+                </div>
             </div>
 
-            <div class="play-actions">
-                <div class="play-topbar">
-                    <div class="play-bar">
-                        <div class="play-toggle">
-                            <div class="play-bar__number">00:00</div>
+            <div class="main-head">Đề xuất cho bạn</div>
+            <div class="product-list">
+                <div class="product-item">
+                    <a class="product-top" href="watch.html">
+                        <img class="product-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-1.png?raw=true" alt="">
+                        <video class="product-video" muted name="media">
+                            <source src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-1.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <div class="product-wrap">
+                        <nav>
+                            <a href="watch.html" class="product-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                            <p>120 lượt xem - 3 ngày trước</p>
+                        </nav>
+                        <div class="btn-product">
+                            <i class="ti ti-dots-vertical"></i>
                         </div>
                     </div>
-                </div>
-                <div class="play-below">
-                    <nav>
-                        <i class="ti ti-player-play-filled"></i>
-                        <button type="button" class="play-volume">
-                            <i class="ti ti-volume"></i>
-                            <div class="play-volume__wrap">
-                                <div class="play-volume__number">0</div>
-                                <div class="play-volume__bar">
-                                    <div class="play-volume__toggle"></div>
-                                </div>
-                            </div>
+                    <form method="post" action="" class="product-tools">
+                        <input type="hidden" id="productId" value="1">
+                        <button type="button" class="product-txt product-bt">
+                            <i class="ti ti-list-details"></i>
+                            <span>Thêm vào danh sách</span>
                         </button>
-                        <h4 class="play-time">
-                            <span id="realTime">00:00</span>
-                            /
-                            <span id="totalTime"></span>
-                        </h4>
-                    </nav>
-                    <nav>
-                        <div class="play-speed">
-                            <div class="play-speed__data">1X</div>
-                            <div class="play-speed__list">
-                                <div class="play-speed__item">2X</div>
-                                <div class="play-speed__item">1.5X</div>
-                                <div class="play-speed__item active">1X</div>
-                                <div class="play-speed__item">0.75X</div>
-                                <div class="play-speed__item">0.5X</div>
-                            </div>
-                        </div>
-                        <i class="ti ti-arrows-maximize"></i>
-                    </nav>
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="contai-left">
-                <div class="contai-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</div>
-                
-                <div class="contai-top">
-                    <div class="contai-raption">
-                        <div class="raption-user">
-                            <a href="#">
-                                <img src="assets/images/user.png" alt="">
-                            </a>
-                            <nav>
-                                <a href="#">Đại đế review</a>
-                                <p>134k người đăng ký</p>
-                            </nav>
-                        </div>
-                        <form action="" method="post">
-                            <!-- <button type="submit" class="btn-monitor">Theo dõi</button> -->
-                            <button type="submit" class="btn-monitor btn-monitor__fill">Đã theo dõi</button>
-                        </form>
-                    </div>
-
-                    <div class="contai-action">
-                        <form action="" method="post">
-                            <!-- <button type="submit" class="btn-like">
-                                <i class="ti ti-thumb-up"></i>
-                                <span>1.2K</span>
-                            </button> -->
-                            <button type="submit" class="btn-like btn-like__fill">
-                                <i class="ti ti-thumb-up-filled"></i>
-                                <span>1.2K</span>
-                            </button>
-                        </form>
-                        <button type="button" class="btn-contai" id="btnShare">
+                        <button type="button" class="product-txt product-download" data-link="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-1.mp4">
+                            <i class="ti ti-download"></i>
+                            <span>Tải xuống</span>
+                        </button>
+                        <button type="button" class="product-txt product-share">
                             <i class="ti ti-share-3"></i>
                             <span>Chia sẻ</span>
                         </button>
-                        <div class="btn-tools">
-                            <i class="ti ti-dots"></i>
-                            <form method="post" action="" class="product-tools">
-                                <input type="hidden" id="productId" value="1">
-                                <button type="button" class="product-txt product-download" data-link="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-1.mp4">
-                                    <i class="ti ti-download"></i>
-                                    <span>Tải xuống</span>
-                                </button>
-                                <button type="button" class="product-txt product-report">
-                                    <i class="ti ti-flag-3"></i>
-                                    <span>Báo vi phạm</span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="contai-des">
-                    <div class="contai-des__head">97 N lượt xem - 1 tháng trước</div>
-                    <div class="contai-des__wrap">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum alias minus, dicta a ipsa quis ea repudiandae dolores exercitationem! Itaque, omnis sunt enim nemo explicabo eius totam quam expedita repellendus.
-                    Quos eveniet repudiandae, quisquam ut ipsam quidem modi ab non enim provident fuga voluptas ea ullam cupiditate similique ratione iure qui voluptate eius praesentium minus libero voluptatibus? Tempora, fugit ullam?
-                    Ipsa odio iure dolor nam illum dolore laborum aliquid facilis. Deserunt corrupti ab iure beatae iusto nesciunt, qui quia doloremque, sint praesentium eveniet perferendis mollitia enim quam voluptas, aliquid sapiente.</div>
-                    <button type="button" class="contai-des__btn">Xem thêm</button>
-                </div>
-
-                <div class="contai-comment">
-                    <div class="comment-head">
-                        <h3>Bình luận [6]</h3>
-                        <select name="">
-                            <option value="new">Mới nhất</option>
-                            <option value="old">Cũ nhất</option>
-                        </select>
-                    </div>
-                    <form class="comment-form" action="" method="post">
-                        <img src="./assets/images/user.png" alt="">
-                        <nav>
-                            <textarea name="" id="commentTextarea" placeholder="Để lại bình luận thân thiện (^-^)"></textarea>
-                            <button type="button" class="comment-submit">Gửi</button>
-                        </nav>
+                        <button type="button" class="product-txt product-report">
+                            <i class="ti ti-flag-3"></i>
+                            <span>Báo vi phạm</span>
+                        </button>
                     </form>
                 </div>
+                <div class="product-item">
+                    <a class="product-top" href="#">
+                        <img class="product-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/99fbd6fe8b219f0888be38b2bd425b82684bea1d/images/product-2.png" alt="">
+                        <video class="product-video" muted name="media">
+                            <source src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-2.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <div class="product-wrap">
+                        <nav>
+                            <a href="#" class="product-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                            <p>120 lượt xem - 3 ngày trước</p>
+                        </nav>
+                        <div class="btn-product">
+                            <i class="ti ti-dots-vertical"></i>
+                        </div>
+                    </div>
+                    <form method="post" action="" class="product-tools">
+                        <input type="hidden" id="productId" value="2">
+                        <button type="button" class="product-txt product-bt">
+                            <i class="ti ti-list-details"></i>
+                            <span>Thêm vào danh sách</span>
+                        </button>
+                        <button type="button" class="product-txt product-download" data-link="./assets/images/product-1.png">
+                            <i class="ti ti-download"></i>
+                            <span>Tải xuống</span>
+                        </button>
+                        <button type="button" class="product-txt product-share">
+                            <i class="ti ti-share-3"></i>
+                            <span>Chia sẻ</span>
+                        </button>
+                        <button type="button" class="product-txt product-report">
+                            <i class="ti ti-flag-3"></i>
+                            <span>Báo vi phạm</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="product-item">
+                    <a class="product-top" href="#">
+                        <img class="product-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/99fbd6fe8b219f0888be38b2bd425b82684bea1d/images/product-3.png" alt="">
+                        <video class="product-video" muted name="media">
+                            <source src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-3.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <div class="product-wrap">
+                        <nav>
+                            <a href="#" class="product-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                            <p>120 lượt xem - 3 ngày trước</p>
+                        </nav>
+                        <div class="btn-product">
+                            <i class="ti ti-dots-vertical"></i>
+                        </div>
+                    </div>
+                    <form method="post" action="" class="product-tools">
+                        <input type="hidden" id="productId" value="3">
+                        <button type="button" class="product-txt product-bt">
+                            <i class="ti ti-list-details"></i>
+                            <span>Thêm vào danh sách</span>
+                        </button>
+                        <button type="button" class="product-txt product-download" data-link="./assets/images/product-1.png">
+                            <i class="ti ti-download"></i>
+                            <span>Tải xuống</span>
+                        </button>
+                        <button type="button" class="product-txt product-share">
+                            <i class="ti ti-share-3"></i>
+                            <span>Chia sẻ</span>
+                        </button>
+                        <button type="button" class="product-txt product-report">
+                            <i class="ti ti-flag-3"></i>
+                            <span>Báo vi phạm</span>
+                        </button>
+                    </form>
+                </div>
+                <div class="product-item">
+                    <a class="product-top" href="#">
+                        <img class="product-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/99fbd6fe8b219f0888be38b2bd425b82684bea1d/images/product-4.png" alt="">
+                        <video class="product-video" muted name="media">
+                            <source src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/videos/video-4.mp4" type="video/mp4">
+                        </video>
+                    </a>
+                    <div class="product-wrap">
+                        <nav>
+                            <a href="#" class="product-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                            <p>120 lượt xem - 3 ngày trước</p>
+                        </nav>
+                        <div class="btn-product">
+                            <i class="ti ti-dots-vertical"></i>
+                        </div>
+                    </div>
+                    <form method="post" action="" class="product-tools">
+                        <input type="hidden" id="productId" value="4">
+                        <button type="button" class="product-txt product-bt">
+                            <i class="ti ti-list-details"></i>
+                            <span>Thêm vào danh sách</span>
+                        </button>
+                        <button type="button" class="product-txt product-download" data-link="./assets/images/product-1.png">
+                            <i class="ti ti-download"></i>
+                            <span>Tải xuống</span>
+                        </button>
+                        <button type="button" class="product-txt product-share">
+                            <i class="ti ti-share-3"></i>
+                            <span>Chia sẻ</span>
+                        </button>
+                        <button type="button" class="product-txt product-report">
+                            <i class="ti ti-flag-3"></i>
+                            <span>Báo vi phạm</span>
+                        </button>
+                    </form>
+                </div>
+                <!-- <div class="post-note">Không có dữ liệu!</div> -->
+            </div>
+        </div>
+    </div>
+    <!-- end -->
 
-                <div class="comment-list">
-                    <div class="comment-item" data-id="1">
-                        <img src="./assets/images/user.png" alt="">
-                        <div class="comment-wrap">
-                            <h4>Lucifer &#176; <span>13-07-2025</span></h4>
-                            <div class="comment-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit ex nihil illo voluptas, sed quas voluptates sint! Alias veritatis amet deserunt similique maxime quae quia, dolor itaque deleniti nam.</div>
-                            <form action="" method="post">
-                                <button type="button" class="comment-btn active">
-                                    <i class="ti ti-thumb-up"></i>
-                                    <span>7</span>
-                                </button>
-                                <button type="button" class="comment-btn">
-                                    <i class="ti ti-help-triangle"></i>
-                                    <span>Báo cáo bình luận</span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="comment-item" data-id="2">
-                        <img src="./assets/images/user.png" alt="">
-                        <div class="comment-wrap">
-                            <h4>Lucifer &#176; <span>13-07-2025</span></h4>
-                            <div class="comment-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto reprehenderit ex nihil illo voluptas, sed quas voluptates sint! Alias veritatis amet deserunt similique maxime quae quia, dolor itaque deleniti nam.</div>
-                            <form action="" method="post">
-                                <button type="button" class="comment-btn">
-                                    <i class="ti ti-thumb-up"></i>
-                                    <span>7</span>
-                                </button>
-                                <button type="button" class="comment-btn">
-                                    <i class="ti ti-help-triangle"></i>
-                                    <span>Báo cáo bình luận</span>
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- <div class="comment-note">Không có dữ liệu nào!</div> -->
+    <!-- modal danh sách -->
+    <div class="modal" id="modalPlaylist">
+        <div class="playlist-nav">
+            <!-- list danh sách -->
+            <form method="post" action="" class="playlist-list">
+                <input type="hidden" id="productIdList" value="">
+                <div class="playlist-head">
+                    <h4>Thêm vào danh sách</h4>
+                    <i class="ti ti-x" id="closeModalPlaylist"></i>
                 </div>
-            </div>
-            <div class="contai-right">
-                <div class="contai-right__head">Đề xuất cho bạn</div>
-                <div class="contai-list">
-                    <div class="contai-item">
-                        <a href="#"><img src="https://raw.githubusercontent.com/HungVN-Code/flim_project/99fbd6fe8b219f0888be38b2bd425b82684bea1d/images/product-2.png" alt=""></a>
-                        <nav>
-                            <a href="#" class="contai-item__title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
-                            <a href="#" class="contai-item__channel">Đại đế review</a>
-                            <p>120 lượt xem - 3 ngày trước</p>
-                        </nav>
+                <div class="playlist-wrap">
+                    <div class="playlist-item">
+                        <input type="checkbox">
+                        <div class="playlist-check">
+                            <i class="ti ti-check"></i>
+                        </div>
+                        <div class="playlist-name">Phim hay</div>
                     </div>
-                    <div class="contai-item">
-                        <a href="#"><img src="https://raw.githubusercontent.com/HungVN-Code/flim_project/99fbd6fe8b219f0888be38b2bd425b82684bea1d/images/product-2.png" alt=""></a>
-                        <nav>
-                            <a href="#" class="contai-item__title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
-                            <a href="#" class="contai-item__channel">Đại đế review</a>
-                            <p>120 lượt xem - 3 ngày trước</p>
-                        </nav>
-                    </div>
-                    <div class="contai-item">
-                        <a href="#"><img src="https://raw.githubusercontent.com/HungVN-Code/flim_project/99fbd6fe8b219f0888be38b2bd425b82684bea1d/images/product-2.png" alt=""></a>
-                        <nav>
-                            <a href="#" class="contai-item__title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
-                            <a href="#" class="contai-item__channel">Đại đế review</a>
-                            <p>120 lượt xem - 3 ngày trước</p>
-                        </nav>
+                    <div class="playlist-item">
+                        <input type="checkbox">
+                        <div class="playlist-check">
+                            <i class="ti ti-check"></i>
+                        </div>
+                        <div class="playlist-name">Hài hay</div>
                     </div>
                 </div>
-            </div>
+                <div class="playlist-footer">
+                    <button type="button" class="playlist-btn create-playlist-btn">
+                        <i class="ti ti-plus"></i>
+                        <span>Tạo mới</span>
+                    </button>
+                    <button type="button" class="playlist-btn add-playlist-btn">
+                        <span>Thêm vào</span>
+                    </button>
+                </div>
+            </form>
+
+            <!-- tạo danh sách mới -->
+            <form method="post" action="" class="playlist-form">
+                <input type="hidden" id="productIdForm" value="">
+                <div class="playlist-head">
+                    <h4>Tạo danh sách mới</h4>
+                </div>
+                <div class="playlist-wrap">
+                    <div class="playlist-group">
+                        <label>Tên</label>
+                        <input type="text" id="playlistName" name="" placeholder="Chọn một tiêu đề..." required>
+                    </div>
+                    <div class="playlist-group">
+                        <label>Mô tả</label>
+                        <textarea name="" placeholder="Mô tả (nếu có)"></textarea>
+                    </div>
+                </div>
+                <div class="playlist-footer">
+                    <button type="button" class="playlist-btn cancel-playlist-btn">
+                        <span>Huỷ</span>
+                    </button>
+                    <button type="button" class="playlist-btn create-playlist-submit">
+                        <span>Tạo</span>
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
     <!-- end -->
@@ -553,7 +587,53 @@
     </div>
     <!-- end -->
 
+    <!-- modal thông tin -->
+    <div class="modal" id="modalDes">
+        <div class="des-nav">
+            <input type="hidden" id="productIdDes" value="">
+            <div class="playlist-head">
+                <h4 id="desTitle"></h4>
+                <i class="ti ti-x" id="closeModalDes"></i>
+            </div>
+            <div class="des-wrap">
+                <div class="des-group">
+                    <label>Mô tả</label>
+                    <div id="desContent"></div>
+                </div>
+                <div class="des-group">
+                    <label>Thông tin khác</label>
+                    <div class="des-box">
+                        <i class="ti ti-mail"></i>
+                        <span>popsreview@gmail.com</span>
+                    </div>
+                    <div class="des-box">
+                        <i class="ti ti-world"></i>
+                        <span>www.veevee.com/@popsreview</span>
+                    </div>
+                    <div class="des-box">
+                        <i class="ti ti-info-hexagon"></i>
+                        <span>Đã tham gia 18 thg 7, 2022</span>
+                    </div>
+                    <div class="des-box">
+                        <i class="ti ti-user-question"></i>
+                        <span>317 N người theo dõi</span>
+                    </div>
+                    <div class="des-box">
+                        <i class="ti ti-movie"></i>
+                        <span>540 video</span>
+                    </div>
+                    <div class="des-box">
+                        <i class="ti ti-trending-up"></i>
+                        <span>318.974.435 lượt xem</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
     <!-- js -->
-    <script src="./assets/js/watch.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/post.js"></script>
 </body>
 </html>
