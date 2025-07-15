@@ -5,3 +5,32 @@ https://github.com/HungVN-Code/veevee_project/blob/main/assets/videos/intro.mp4
 
 🔄 Thay blob thành raw:
 https://raw.githubusercontent.com/HungVN-Code/veevee_project/main/assets/videos/intro.mp4
+
+
+
+<div class="pagination">
+    <div class="pagination-display">
+        <h4>Phân chia mỗi trang: <span id="displayNumber">4</span>
+            <i class="ti ti-chevron-up"></i>
+        </h4>
+        <ul class="pagination-select">
+            <li class="pagination-option active">4</li>
+            <li class="pagination-option">8</li>
+            <li class="pagination-option">12</li>
+        </ul>
+    </div>
+    <div class="pagination-list">
+        <div class="pagination-item" id="paginationHeader">Đầu trang</div>
+        <div class="pagination-item" id="paginationFooter">Cuối trang</div>
+        <div class="pagination-item" id="prev">
+            <i class="ti ti-chevrons-left"></i>
+        </div>
+        <div class="pagination-item active">1</div>
+        <div class="pagination-item">2</div>
+        <div class="pagination-item intermediate">...</div>
+        <div class="pagination-item">10</div>
+        <div class="pagination-item" id="next">
+            <i class="ti ti-chevrons-right"></i>
+        </div>
+    </div>
+</div>
