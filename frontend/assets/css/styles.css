@@ -466,6 +466,7 @@ body.hiddenScroll {
     line-height: 1.2rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -683,6 +684,7 @@ body.hiddenScroll {
     line-height: 1.2rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1538,6 +1540,7 @@ body.hiddenScroll {
     margin: .6rem 0;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1652,6 +1655,7 @@ body.hiddenScroll {
     line-height: 1.2rem;
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1659,6 +1663,7 @@ body.hiddenScroll {
 
 .contai-des__wrap.active {
     -webkit-line-clamp: inherit;
+    line-clamp: inherit;
 }
 
 .contai-des__btn {
@@ -1898,6 +1903,7 @@ body.hiddenScroll {
     color: var(--black-85);
     display: -webkit-box;
     -webkit-line-clamp: 2;
+    line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -1991,6 +1997,7 @@ body.hiddenScroll {
     color: var(--black-85);
     display: -webkit-box;
     -webkit-line-clamp: 1;
+    line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
