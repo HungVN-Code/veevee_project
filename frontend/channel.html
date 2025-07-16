@@ -1,1 +1,280 @@
 <!-- trang quản lý video của user đăng nhập -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VEEVEE | Video hay, cảm xúc đầy</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+    <link rel="shortcut icon" href="./assets/images/shortcut.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <!-- header -->
+    <header class="header-nav">
+        <a href="index.html" class="logo">
+            <img src="./assets/images/logo.png" alt="">
+        </a>
+
+        <div class="search-nav">
+            <div class="search-form">
+                <i class="ti ti-search"></i>
+                <input type="text" name="" placeholder="Tìm kiếm...">
+            </div>
+            <!-- <div class="search-list">
+                <a class="search-item" href="#">
+                    <i class="ti ti-search"></i>
+                    <h5>Connan movie 27</h5>
+                </a>
+                <a class="search-item" href="#">
+                    <i class="ti ti-search"></i>
+                    <h5>Connan movie 27</h5>
+                </a>
+                <div class="search-note">Không có dữ liệu nào!</div>
+            </div> -->
+        </div>
+
+        <div class="header-actions">
+            <!-- upload -->
+            <div class="btn">
+                <i class="ti ti-upload btn-icon"></i>
+                <div class="actions-wrap">
+                    <div class="actions-not">
+                        <h5>Đăng nhập để đồng bộ tải lên</h5>
+                        <a class="btn btn-notlink" href="login.html">Đăng nhập</a>
+                    </div>
+                </div>
+                <!-- <div class="actions-wrap">
+                    <div class="upload-list">
+                        <a class="upload-item" href="#">
+                            <i class="ti ti-upload"></i>
+                            <span>Đăng video</span>
+                        </a>
+                        <a class="upload-item" href="#">
+                            <i class="ti ti-folder-pause"></i>
+                            <span>Quản lý video</span>
+                        </a>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- lịch sử -->
+            <div class="btn">
+                <i class="ti ti-clock btn-icon"></i>
+                <div class="actions-wrap">
+                    <div class="actions-not">
+                        <h5>Đăng nhập để đồng bộ lịch sử</h5>
+                        <a class="btn btn-notlink" href="login.html">Đăng nhập</a>
+                    </div>
+                </div>
+                <!-- <div class="actions-wrap actions-on">
+                    <div class="actions-head">Lịch sử xem</div>
+                    <div class="notions-list">
+                        <div class="notions-item">
+                            <a href="#">
+                                <img class="notions-img" src="./assets/images/product-1.png" alt="">
+                            </a>
+                            <div class="notions-wrap">
+                                <a href="#">
+                                    <img class="notions-avatar" src="./assets/images/user.png" alt="">
+                                </a>
+                                <nav>
+                                    <a href="#" class="notions-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                                    <a href="#" class="notions-user">TeddySenpai.</a>
+                                    <p>120 lượt xem - 3 ngày trước</p>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="notions-item">
+                            <a href="#">
+                                <img class="notions-img" src="./assets/images/product-1.png" alt="">
+                            </a>
+                            <div class="notions-wrap">
+                                <a href="#">
+                                    <img class="notions-avatar" src="./assets/images/user.png" alt="">
+                                </a>
+                                <nav>
+                                    <a href="#" class="notions-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                                    <a href="#" class="notions-user"></a>
+                                    <p>120 lượt xem - 3 ngày trước</p>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="notions-item">
+                            <a href="#">
+                                <img class="notions-img" src="./assets/images/product-1.png" alt="">
+                            </a>
+                            <div class="notions-wrap">
+                                <a href="#">
+                                    <img class="notions-avatar" src="./assets/images/user.png" alt="">
+                                </a>
+                                <nav>
+                                    <a href="#" class="notions-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                                    <a href="#" class="notions-user"></a>
+                                    <p>120 lượt xem - 3 ngày trước</p>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="notions-note">
+                            <img src="./assets/images/no-data.png" alt="">
+                            <p>Không có dữ liệu!</p>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <!-- danh sách lưu -->
+            <div class="btn">
+                <i class="ti ti-bookmark btn-icon"></i>
+                <div class="actions-wrap">
+                    <div class="actions-not">
+                        <h5>Đăng nhập để đồng bộ danh sách lưu</h5>
+                        <a class="btn btn-notlink" href="login.html">Đăng nhập</a>
+                    </div>
+                </div>
+                <!-- giống vs phần lịch sử -->
+            </div>
+
+            <!-- yêu thích -->
+            <div class="btn">
+                <i class="ti ti-heart btn-icon"></i>
+                <div class="actions-wrap">
+                    <div class="actions-not">
+                        <h5>Đăng nhập để đồng bộ mục yêu thích</h5>
+                        <a class="btn btn-notlink" href="login.html">Đăng nhập</a>
+                    </div>
+                </div>
+                <!-- giống vs phần lịch sử -->
+            </div>
+
+            <!-- thông báo -->
+            <div class="btn">
+                <i class="ti ti-bell btn-icon"></i>
+                <div class="actions-wrap actions-on">
+                    <div class="actions-head">Thông báo</div>
+                    <div class="notions-list">
+                        <div class="notions-item">
+                            <a href="#">
+                                <img class="notions-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-1.png" alt="">
+                            </a>
+                            <div class="notions-wrap">
+                                <a href="#">
+                                    <img class="notions-avatar" src="./assets/images/user.png" alt="">
+                                </a>
+                                <nav>
+                                    <a href="#" class="notions-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                                    <p>120 lượt xem - 3 ngày trước</p>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="notions-item">
+                            <a href="#">
+                                <img class="notions-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-2.png" alt="">
+                            </a>
+                            <div class="notions-wrap">
+                                <a href="#">
+                                    <img class="notions-avatar" src="./assets/images/user.png" alt="">
+                                </a>
+                                <nav>
+                                    <a href="#" class="notions-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                                    <p>120 lượt xem - 3 ngày trước</p>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="notions-item">
+                            <a href="#">
+                                <img class="notions-img" src="https://raw.githubusercontent.com/HungVN-Code/flim_project/main/images/product-3.png" alt="">
+                            </a>
+                            <div class="notions-wrap">
+                                <a href="#">
+                                    <img class="notions-avatar" src="./assets/images/user.png" alt="">
+                                </a>
+                                <nav>
+                                    <a href="#" class="notions-title">Thám tử lừng danh Conan: Tận cùng của sự sợ hãi 2008 [ lồng tiếng ]</a>
+                                    <p>120 lượt xem - 3 ngày trước</p>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- user account -->
+            <div class="btn btn-header">
+                Đăng nhập
+                <div class="actions-wrap">
+                    <div class="actions-not">
+                        <h4>Đăng nhập để hưởng các quyền lợi</h4>
+                        <h5><i class="ti ti-badge-hd"></i>Xem video chất lượng HD miễn phí</h5>
+                        <h5><i class="ti ti-clock"></i>Đồng bộ lịch sử lướt xem ở các thiết bị khác nhau</h5>
+                        <h5><i class="ti ti-message"></i>Gửi comment</h5>
+                        <h5><i class="ti ti-copyright"></i>Xem nội dung độc quyền</h5>
+                        <a class="btn btn-notlink" href="login.html">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="btn btn-user">
+                <img src="./assets/images/user.png" alt="">
+                <div class="actions-wrap">
+                    <div class="user-head">
+                        <img src="./assets/images/user.png" alt="">
+                        <nav>
+                            <h3>Tran_Hai_k3</h3>
+                            <p>ID: 16273</p>
+                        </nav>
+                    </div>
+                    <div class="user-list">
+                        <a class="user-item" href="#">
+                            <i class="ti ti-user"></i>
+                            <span>Hồ sơ</span>
+                        </a>
+                        <a class="user-item" href="#">
+                            <i class="ti ti-settings"></i>
+                            <span>Cài đặt</span>
+                        </a>
+                        <a class="user-item" href="#">
+                            <i class="ti ti-message-2"></i>
+                            <span>Phản hồi</span>
+                        </a>
+                    </div>
+                    <div class="user-footer">
+                        <a class="user-item" href="#">
+                            <i class="ti ti-logout"></i>
+                            <span>Đăng xuất</span>
+                        </a>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+    </header>
+    <!-- end -->
+
+    <!-- sidebar -->
+    <div class="sidebar">
+        <a class="sidebar-item" href="index.html">
+            <i class="ti ti-home"></i>
+            <span>Trang chủ</span>
+        </a>
+        <a class="sidebar-item" href="#">
+            <i class="ti ti-folder-pause"></i>
+            <span>Kênh đăng ký</span>
+        </a>
+        <a class="sidebar-item" href="#">
+            <i class="ti ti-list-details"></i>
+            <span>Danh sách</span>
+        </a>
+    </div>
+    <!-- end -->
+
+    <!-- main -->
+    <div class="main">
+        
+    </div>
+    <!-- end -->
+
+    <!-- js -->
+    <!-- <script src="./assets/js/editting.js"></script> -->
+</body>
+</html>

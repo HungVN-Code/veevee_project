@@ -30,6 +30,60 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ==================================================================================
 
+    const tabs = document.querySelectorAll('.post-tab');
+    const wrappers = document.querySelectorAll('.post-wrapper');
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            // Xoá .active khỏi tất cả tab và wrapper
+            tabs.forEach(t => t.classList.remove('active'));
+            wrappers.forEach(w => w.classList.remove('active'));
+
+            // Thêm .active vào tab được click và wrapper tương ứng
+            tab.classList.add('active');
+            wrappers[index].classList.add('active');
+        });
+    });
+
+
+    // ==================================================================================
+
+    // Lặp qua từng .product-item
+    document.querySelectorAll(".data-item").forEach(item => {
+        const btn = item.querySelector(".data-btn");
+        const tools = item.querySelector(".data-tools");
+
+        // Toggle active khi click vào nút
+        btn.addEventListener("click", (e) => {
+            e.stopPropagation(); // Ngăn click lan ra document
+            // Xoá active ở các tool khác trước
+            document.querySelectorAll(".data-tools.active").forEach(t => {
+                if (t !== tools) t.classList.remove("active");
+            });
+            tools.classList.toggle("active");
+        });
+    });
+
+    // Click bên ngoài .product-tools thì xoá active
+    document.addEventListener("click", (e) => {
+        document.querySelectorAll(".data-tools.active").forEach(tools => {
+            // Nếu click không nằm trong .product-tools hoặc .btn-product
+            if (!tools.contains(e.target) && !tools.previousElementSibling?.contains(e.target)) {
+                tools.classList.remove("active");
+            }
+        });
+    });
+
+    // Cuộn trang thì xoá tất cả .active
+    window.addEventListener("scroll", () => {
+        document.querySelectorAll(".data-tools.active").forEach(tools => {
+            tools.classList.remove("active");
+        });
+    });
+
+
+    // ==================================================================================
+
     const productList = document.querySelector('.product-list');
     const allProducts = Array.from(document.querySelectorAll('.product-item'));
     const paginationSelect = document.querySelectorAll('.pagination-option');
